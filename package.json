@@ -1,0 +1,26 @@
+{
+  "name": "chat-lite",
+  "version": "1.0.0",
+  "description": "An Ethereum based Lite Chat Client",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanjayB-28/Chat_lite.git"
+  },
+  "author": "Sanjay B",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "bugs": {
+    "url": "https://github.com/SanjayB-28/Chat_lite/issues"
+  },
+  "homepage": "https://github.com/SanjayB-28/Chat_lite#readme"
+}
