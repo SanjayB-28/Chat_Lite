@@ -90,7 +90,7 @@ App = {
         web3.eth.getBalance(account[0], function(err, balance) {
           if (err === null) {
             if (balance == 0) {
-              alert("Your account has zero balance. You must transfer some Ether to your MetaMask account to be able to send messages with ChatWei. Just come back and refresh this page once you have transferred some funds.");
+              alert("Your account has zero balance. You must transfer some Ether to your MetaMask account to be able to send messages with Chat-Lite. Just come back and refresh this page once you have transferred some funds.");
               App.setStatus("Please buy more Ether");
               return;
             } else {
@@ -148,7 +148,7 @@ App = {
     }).then(function(result) {
       var gasUsedWei = result.receipt.gasUsed;
       var gasUsedEther = web3.fromWei(gasUsedWei, "ether");
-      self.setStatus("User is registered...gas spent: " + gasUsedWei + "(Wei)");
+      self.setStatus("User is registered...gas spent: " + gasUsedWei + "(BIT)");
       alert("A personal inbox has been established for you on the Ethereum blockchain. You're all set!");
     }).catch(function(e) {
       console.log(e);
@@ -211,7 +211,7 @@ App = {
       console.log(result);
       var gasUsedWei = result.receipt.gasUsed;
       var gasUsedEther = web3.fromWei(gasUsedWei, "ether");
-      self.setStatus("Message successfully sent...gas spent: " + gasUsedWei + " Wei");
+      self.setStatus("Message successfully sent...gas spent: " + gasUsedWei + " BIT");
       document.getElementById("sendMessageButton").disabled = false;
       document.getElementById("message").value = "";
     }).catch(function(e) {
