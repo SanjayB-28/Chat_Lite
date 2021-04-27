@@ -148,7 +148,7 @@ App = {
     }).then(function(result) {
       var gasUsedWei = result.receipt.gasUsed;
       var gasUsedEther = web3.fromWei(gasUsedWei, "ether");
-      self.setStatus("User is registered...gas spent: " + gasUsedWei + "(BIT)");
+      self.setStatus("User is registered...gas spent: " + gasUsedWei + "(Wei)");
       alert("A personal inbox has been established for you on the Ethereum blockchain. You're all set!");
     }).catch(function(e) {
       console.log(e);
@@ -211,7 +211,7 @@ App = {
       console.log(result);
       var gasUsedWei = result.receipt.gasUsed;
       var gasUsedEther = web3.fromWei(gasUsedWei, "ether");
-      self.setStatus("Message successfully sent...gas spent: " + gasUsedWei + " BIT");
+      self.setStatus("Message successfully sent...gas spent: " + gasUsedWei + " Wei");
       document.getElementById("sendMessageButton").disabled = false;
       document.getElementById("message").value = "";
     }).catch(function(e) {
