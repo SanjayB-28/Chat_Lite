@@ -1,3 +1,3 @@
 # Chat_Lite
 
->Project Description will be Soon Updated Here.
+>Project Description will be updated soon.
